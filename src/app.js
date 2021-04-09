@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 
-export const App = () => {
+import BirthDayReminder from './birthday_reminder';
+import BookList from './book/booklist';
+
+const App = () => {
 
     const [text, setText] = useState("Random");
     const handleClick = () => {
@@ -13,9 +16,14 @@ export const App = () => {
 
     return (
         <div>
-            <h2>{text}</h2>
-            <button type='button' onClick={handleClick}>change text</button>
+            < BirthDayReminder />
+            <hr style={{ margin: "3rem" }} />
+            <BookList />
+            {/* <h2>{text}</h2>
+            <button type='button' onClick={handleClick}>change text</button> */}
         </div>
     )
 
 }
+
+export default App;

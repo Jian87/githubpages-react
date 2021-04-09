@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { books } from './books';
 import { Book } from './Book';
-import { App } from './app'
-import AddUser from './form';
+import AddUser from '../form';
+import './book.css';
 
 const BookList = () => {
-
-    const [show, setShow] = useState(true);
 
     return (
         <div>
             <section className='header'>
-                <App />
                 <AddUser />
             </section>
 

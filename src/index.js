@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-// CSS
+import App from './app';
 import './index.css';
-import BookList from './booklist';
-
-
-ReactDom.render(<BookList />, document.getElementById('root'));
+ReactDom.render(<App />, document.getElementById('root'));
 
