@@ -11,6 +11,11 @@ body {
   color: #222;
 }
 
+.header {
+  margin: 5rem auto;
+  text-align: center;
+}
+
 .booklist {
   width: 90vw;
   max-width: 1176px;
